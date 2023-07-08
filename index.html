@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nutrivive</title>
+    <link rel="icon" href="img/nutrify.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: lightgoldenrodyellow;
+        }
+        h1 {
+            font-size: 45px;
+        }
+        p {
+            background-color: lightyellow;
+        }
+        .important {
+            /* this will require you to declare a class="important" in one of your HTML elements */
+        }
+        #interesting {
+            /* this will require you to declare a id="interesting" in one of your HTML elements */
+        }
+    </style>
+</head>
+<body>
+  <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#impact">Impact</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li ><button id="theme-button">Toggle Dark Mode</button></li>
+        </ul>
+    </div>
+
+  <div class="header-container">
+    <div id="header-img">
+        <img src="img/nutrify.png" alt="Nutrivive logo"/>
+    </div>
+    <div class="right-div">
+      <div class="header-item1">
+        <h1>Nutrivive</h1>
+        <h3>Feeding hope, nourishing lives.</h3>
+    </div>
+    <div class="header-item2">
+        <button class="header-button">Get Involved</button>
+        <button class="header-button">Learn More</button>
+    </div>
+    </div>
+    
+</div>
+
+  <div class="about revealable" id="about">
+    <h2>About Us</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/iteCytv0RqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <img src="img/zero_hunger.jpg" alt="Zero Hunger" width="550" height="200"/>
+    <p>Join us in the fight against hunger and malnutrition! Our website provides information and resources on the critical issue of Zero Hunger. With poor communities struggling to access necessities, including food, it's a major problem that requires immediate attention. The COVID-19 pandemic and other global incidents have only made the situation worse. We showcase the work of organizations actively working towards addressing hunger and malnutrition, and provide information on current initiatives and projects. Stay informed and make a difference by subscribing to our free newsletter today</p>
+    </div>
+
+  <div id = "impact revealable" id="impact">
+    <h3>Data about my topic</h3>
+    <img src="img/Stat_1.png" alt="Statistical data on hunger" width="550" height="450"/>
+<h4>According to the latest data, less than 15% of the world's population has access to a healthy diet. The percentage of people with access to a healthy diet increases to 45% in high-income countries.</h4>
+
+  
+    <ul>
+        <li> less than 15%</li>
+        <li> 15%-25%</li>
+        <li> 25%-35%</li>
+        <li> 35%-45%</li>
+        <li> >45%</li>
+    </ul>
+
+    <!--- Impact --->
+    <h2>Impact of Hunger</h2>
+
+<img src="img/Impact_1.png" alt="Impact of hunger on children" width="550" height="350"/>
+<h3>Impact of hunger on children</h3>
+<p>Children who suffer from malnutrition are more likely to experience stunted growth, delayed cognitive development, and increased risk of infections.</p>
+
+<img src="img/Impact_2.png" alt="Impact of hunger on women" width="550" height="350"/>
+<h3>Impact of hunger on women</h3>
+<p>Women who are malnourished during pregnancy are more likely to experience complications during childbirth and have children with low birth weights.</p>
+
+<img src="img/Impact_3.png" alt="Impact of hunger on communities" width="550" height="350"/>
+<h3>Where can this problem have lasting effects?</h3>
+<p>Hunger can lead to social and economic instability, especially in developing countries. It can also exacerbate conflicts and displacement.</p>
+
+  
+    <!--- News ---> <!--this will help with a stretch goal, if you do not want to incorporate this, then leave it alone :)-->
+    <h2>Recent News</h2>
+
+<a class="news-link"
+    href="https://www.worldbank.org/en/topic/poverty/brief/global-poverty-line-faq#:~:text=The%20global%20poverty%20line%20is,people%20live%20below%20this%20line."
+    target="_blank">
+    <article>
+        <h3>Why Zero Hunger Matters</h3>
+        <p>Learn how addressing hunger can help reduce poverty and promote economic growth. Read more...</p>
+    </article>
+</a>
+
+<a
+    href="https://www.aljazeera.com/news/2021/6/14/hunger-stalks-ethiopias-tigray-region-as-conflict-continues"
+    target="_blank">
+    <article>
+        <h3>Hunger stalks Ethiopia's Tigray region as conflict continues</h3>
+        <p>The ongoing conflict in Ethiopia's Tigray region has left millions of people without access to food and water. Read more...</p>
+    </article>
+</a>
+<script src="index.js"></script>
+</div>
+
+  <div class="petition revealable" >
+
+  <h2>Sign Our Petition 📢</h2>
+
+  <div class="petition-container">
+    <div class="petition-para">
+      <p>Join us in calling for an end to hunger and malnutrition. Sign this petition to urge governments and organizations to prioritize efforts to reduce hunger, increase access to healthy food, and support sustainable agriculture. Let's make a difference for people in need.</p>
+    </div>
+
+    <div class="signatures" id="signatures">
+      <p>🖊️ James from New York supports this.</p>
+      <p>🖊️ Sam from Indianapolis supports this.</p>
+      <p>🖊️ Luca from Seattle supports this.</p>
+    </div>
+  </div>
+
+  <!-- Sign Petition Form -->
+  <form id="sign-petition" title="sign-petition">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name-input" name="name" class="petition-input" required>
+    </div>
+
+    <div>
+      <label for="hometown">Hometown:</label>
+      <input type="text" id="hometown-input" name="hometown" class="petition-input" required>
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" class="petition-input" required>
+    </div>
+
+    <button type="submit" id="sign-now-button">Sign Now</button>
+  </form>
+
+</div>
+  
+</body>
+</html>
